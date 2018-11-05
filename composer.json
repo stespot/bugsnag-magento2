@@ -4,10 +4,10 @@
   "require": {
     "magento/framework": "100.*|101.*",
     "magento/magento-composer-installer": "*",
-    "bugsnag/bugsnag": "^3.4"
+    "bugsnag/bugsnag": "^3.14.1"
   },
   "type": "magento2-module",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "MIT",
   "autoload": {
     "files": [
@@ -16,5 +16,19 @@
     "psr-4": {
         "Interjar\\BugSnag\\": ""
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    },
+    {
+      "type": "composer",
+      "url": "https://repo.interjar.com/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/magento/marketplace-eqp"
+    }
+  ]
 }
